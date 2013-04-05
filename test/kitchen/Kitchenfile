@@ -3,8 +3,8 @@ cookbook "postgresql" do
   configuration "ruby"
   configuration "server"
   configuration "contrib"
-  configuration "ppa_pitti_postgresql"
+  configuration "ppa_pgdg_postgresql"
   configuration "yum_pgdg_postgresql"
-  exclude :platform => 'centos', :configuration => 'ppa_pitti_postgresql'
+  exclude :platform => 'centos', :configuration => 'ppa_pgdg_postgresql'
   exclude :platform => 'ubuntu', :configuration => 'yum_pgdg_postgresql'
 end
